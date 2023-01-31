@@ -1,9 +1,15 @@
 {
   "routes": [
     {
-      "route": "/*",
+      "route": "/authenticated/*",
       "allowedRoles": [
-        "administrator"
+        "contributor"
+      ]
+    },
+      {
+      "route": "/anonymous/*",
+      "allowedRoles": [
+        "anonymous"
       ]
     }
   ],
